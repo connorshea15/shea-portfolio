@@ -1,7 +1,15 @@
 import React from 'react';
 import Navigation from '../Navigation';
 
-function Header() {
+function Header(props) {
+
+    const {
+        sections = [],
+        currentSection,
+        setCurrentSection
+    } = props;
+
+    console.log(sections, currentSection);
 
     return (
         <header className="flex-row px-1">
