@@ -78,3 +78,7 @@ li {
   padding-top: var(--spacing-two);
   padding-bottom: var(--spacing-two);
 }
+
+li p {
+  cursor: pointer;
+}

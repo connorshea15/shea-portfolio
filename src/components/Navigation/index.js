@@ -1,31 +1,36 @@
 import React from 'react';
 
 
-function Navigation() {
+function Navigation(props) {
 
+    const {
+        sections = [],
+        currentSection,
+        setCurrentSection
+    } = props;
 
 
     return (
         <ul className="flex-row">
             <li className="mx-2">
-                <a href="/">
+                <p onClick={() => setCurrentSection('About')} key="About">
                     About me
-                </a>
+                </p>
             </li>
             <li className="mx-2">
-                <a href="/">
+                <p onClick={() => setCurrentSection('Project')} key="Portfolio">
                     Portfolio
-                </a>
+                </p>
             </li>
             <li className="mx-2">
-                <a href="/">
+                <p onClick={() => setCurrentSection('Contact')} key="Contact">
                     Contact
-                </a>
+                </p>
             </li>
             <li className="mx-2">
-                <a href="/" className="px-2">
+                <p onClick={() => setCurrentSection('Resume')} key="Resume">
                     Resume
-                </a>
+                </p>
             </li>
         </ul>
     );

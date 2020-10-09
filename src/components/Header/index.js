@@ -9,7 +9,7 @@ function Header(props) {
         setCurrentSection
     } = props;
 
-    console.log(sections, currentSection);
+    console.log(currentSection);
 
     return (
         <header className="flex-row px-1">
@@ -17,7 +17,11 @@ function Header(props) {
                 Connor Shea
             </h2>
 
-            <Navigation></Navigation>
+            <Navigation
+                sections={sections}
+                currentSection={currentSection}
+                setCurrentSection={setCurrentSection}
+            ></Navigation>
 
         </header>
     );

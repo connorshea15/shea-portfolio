@@ -5,8 +5,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 
-
-
 function App() {
 
   // state for which section of the portfolio the user is on
@@ -24,10 +22,18 @@ function App() {
       ></Header>
 
       <main>
-
+        {currentSection === 'About' ? (
+          <About></About>
+        ) : (
+          <Project></Project>
+        )}
+      
+      
+      }
 
 
       </main>
+      <Footer></Footer>
     </div>
 
   );
