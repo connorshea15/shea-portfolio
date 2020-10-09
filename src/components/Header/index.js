@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../Navigation';
 
 function Header() {
 
@@ -7,6 +8,8 @@ function Header() {
             <h2>
                 Connor Shea
             </h2>
+
+            <Navigation></Navigation>
 
         </header>
     );
