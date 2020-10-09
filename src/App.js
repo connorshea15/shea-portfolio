@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from './components/Header';
 
 function App() {
   return (
-    // This is where the components will live
+    <Header></Header>
 
   );
 }
