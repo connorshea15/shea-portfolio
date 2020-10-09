@@ -18,7 +18,7 @@ function Navigation(props) {
                 </p>
             </li>
             <li className="mx-2">
-                <p onClick={() => setCurrentSection('Project')} key="Portfolio">
+                <p onClick={() => setCurrentSection('Portfolio')} key="Portfolio">
                     Portfolio
                 </p>
             </li>

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
+import Resume from './components/Resume';
 
 function App() {
 
@@ -24,8 +25,12 @@ function App() {
       <main>
         {currentSection === 'About' ? (
           <About></About>
-        ) : (
+        ) : currentSection === 'Portfolio' ? (
           <Project></Project>
+        ) : currentSection === 'Contact' ? (
+          <Contact></Contact>
+        ) : (
+          <Resume></Resume>
         )}
       
       
