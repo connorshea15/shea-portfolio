@@ -32,15 +32,10 @@ function App() {
         ) : (
           <Resume></Resume>
         )}
-      
-      
-      }
-
-
       </main>
       <Footer></Footer>
     </div>
-
+    
   );
 }
 

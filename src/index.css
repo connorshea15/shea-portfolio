@@ -86,3 +86,14 @@ li p {
 .navActive {
   color: #F3A847;
 }
+
+.project-photo {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+.project-photo:hover {
+  opacity: 0.5;
+}
