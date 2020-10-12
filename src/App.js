@@ -22,7 +22,7 @@ function App() {
         setCurrentSection={setCurrentSection}
       ></Header>
 
-      <main className="">
+      <main>
         {currentSection === 'About' ? (
           <About></About>
         ) : currentSection === 'Portfolio' ? (

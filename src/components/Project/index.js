@@ -38,22 +38,23 @@ function Project() {
 
     return (
 
-        <div className="">
+        <div className="flex-row space-between">
             {projects.map((project, i) => (
-                <div className="flex-row">
-                    <div>
-                    <a href={project.link}>{project.name}</a>
-                    <a href={project.gitLink}>GitHub</a>
-                    </div>
-                
-                    <img
-                        src={require(`../../assets/images/${i}.JPG`)}
-                        alt={project.name}
-                        className="project-photo"
-                        key={project.name}
-                    >
-                    </img>
-                </div>
+                <Card style={{ width: '22rem' }}>
+                    <Card.Body className="mx-1 my-1 text-center">
+                        <Card.Title><a href={project.link}>{project.name}</a></Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted"><a href={project.gitLink}>GitHub</a></Card.Subtitle>
+                        <Card.Text>
+                            <img
+                                src={require(`../../assets/images/${i}.JPG`)}
+                                alt={project.name}
+                                className="project-photo"
+                                key={project.name}
+                            >
+                            </img>
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
             ))}
         </div>
 
@@ -61,17 +62,3 @@ function Project() {
 }
 
 export default Project;
-
-
-<Card style={{ width: '18rem' }}>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
