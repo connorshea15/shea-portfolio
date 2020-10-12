@@ -21,6 +21,7 @@ function Header(props) {
                 sections={sections}
                 currentSection={currentSection}
                 setCurrentSection={setCurrentSection}
+                className="flex-end"
             ></Navigation>
 
         </header>

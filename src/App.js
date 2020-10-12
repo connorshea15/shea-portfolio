@@ -15,14 +15,14 @@ function App() {
 
 
   return (
-    <div>
+    <div className="px-2 py-2">
       <Header
         sections={sections}
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       ></Header>
 
-      <main>
+      <main className="px-2 py-2">
         {currentSection === 'About' ? (
           <About></About>
         ) : currentSection === 'Portfolio' ? (
@@ -33,7 +33,7 @@ function App() {
           <Resume></Resume>
         )}
       </main>
-      <Footer></Footer>
+      <Footer className="footer"></Footer>
     </div>
     
   );
