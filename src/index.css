@@ -1,7 +1,14 @@
 main {
 	margin: 0 auto;
-	max-width: 90%;
+	max-width: 100%;
   padding: 50px 30px;
+}
+
+:root {
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+
 }
 
 body {
@@ -15,7 +22,7 @@ body {
 body {
   margin: 0;
   padding: 5%;
-  width: 100%;
+  width: 90%;
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
@@ -24,6 +31,10 @@ body {
   color: var(--light);
   font-family: 'Poiret One', cursive;
 
+}
+
+header {
+  background-color: aqua;
 }
 
 code {
@@ -109,7 +120,6 @@ li p {
 .project-photo {
     width: 500px;
     height: 300px;
-    margin-bottom: 50px;
     cursor: pointer;
   }
 
@@ -126,11 +136,13 @@ li p {
   margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
+  text-align: center;
 }
 
 .li-logo {
   width: 200px;
   height: 60px;
+  text-align: center;
 }
 
 .full-width {

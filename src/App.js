@@ -15,14 +15,14 @@ function App() {
 
 
   return (
-    <div className="px-2 py-2">
+    <div className="">
       <Header
         sections={sections}
         currentSection={currentSection}
         setCurrentSection={setCurrentSection}
       ></Header>
 
-      <main className="px-2 py-2">
+      <main className="">
         {currentSection === 'About' ? (
           <About></About>
         ) : currentSection === 'Portfolio' ? (

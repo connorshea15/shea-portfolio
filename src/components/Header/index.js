@@ -12,7 +12,7 @@ function Header(props) {
     console.log(currentSection);
 
     return (
-        <header className="flex-row px-1">
+        <header className="flex-row px-1 space-between">
             <h2>
                 Connor Shea
             </h2>
@@ -21,7 +21,6 @@ function Header(props) {
                 sections={sections}
                 currentSection={currentSection}
                 setCurrentSection={setCurrentSection}
-                className="flex-end"
             ></Navigation>
 
         </header>
