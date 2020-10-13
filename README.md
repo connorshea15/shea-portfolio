@@ -15,7 +15,7 @@ To showcase my skills and abilities to prospective employers and lovers of code 
 ![](/src/assets/mockup.JPG)
 
 ## Deployed Application
-https://connorshea15.github.io/Connor-Shea-Portfolio/
+https://connorshea15.github.io/shea-portfolio/
 
 ## Contribution
 Made by Connor Shea
