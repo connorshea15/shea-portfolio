@@ -12,17 +12,18 @@ function Header(props) {
     console.log(currentSection);
 
     return (
-        <header className="flex-row px-1 space-between">
-            <h2>
-                Connor Shea
-            </h2>
-
-            <Navigation
-                sections={sections}
-                currentSection={currentSection}
-                setCurrentSection={setCurrentSection}
-            ></Navigation>
-
+        <header>
+            <div id="header" className="full-width flex-row px-1 space-between">
+                    <h2 className="header-element">
+                        Connor Shea
+                    </h2>
+                    <Navigation
+                        className="header-element"
+                        sections={sections}
+                        currentSection={currentSection}
+                        setCurrentSection={setCurrentSection}
+                    ></Navigation>
+            </div>
         </header>
     );
 }

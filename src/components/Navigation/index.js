@@ -11,7 +11,8 @@ function Navigation(props) {
 
 
     return (
-        <ul className="flex-row">
+        <ul className="flex-row header-element">
+            <div className="flex-row header-element">
             <li className={`mx-2 ${currentSection === 'About' && 'navActive'}`}>
                 <p onClick={() => setCurrentSection('About')} key="About">
                     About me
@@ -22,6 +23,8 @@ function Navigation(props) {
                     Portfolio
                 </p>
             </li>
+            </div>
+            <div className="flex-row header-element">
             <li className={`mx-2 ${currentSection === 'Contact' && 'navActive'}`}>
                 <p onClick={() => setCurrentSection('Contact')} key="Contact">
                     Contact
@@ -32,6 +35,7 @@ function Navigation(props) {
                     Resume
                 </p>
             </li>
+            </div>
         </ul>
     );
 }
