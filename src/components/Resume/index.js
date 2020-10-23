@@ -8,9 +8,9 @@ function Resume() {
 
     return (
         <div className="text-center">
-            <h3 className="text-center">Download My <a href="../../assets/Shea_Connor_Resume.pdf" download>Resume</a></h3>
-            <div className="flex-row space-between">
-                <div>
+            <h1 className="text-center">Download My <a href="../../assets/Shea_Connor_Resume.pdf" download>Resume</a></h1>
+            <div className="flex-row flex-center px-2">
+                <div className="mx-2">
                     <h4>Front-end Proficiencies</h4>
                     <ul>
                         <li>HTML</li>
@@ -20,7 +20,7 @@ function Resume() {
                         <li>Bootstrap</li>
                     </ul>
                 </div>
-                <div>
+                <div className="mx-2">
                     <h4>Back-end Proficiencies</h4>
                     <ul>
                         <li>Express.js</li>

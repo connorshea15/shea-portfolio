@@ -51,6 +51,14 @@ li {
   list-style: none;
 }
 
+.inline {
+  display: inline;
+}
+
+.bio {
+  width: 40%;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +66,14 @@ li {
 
 .space-between {
   justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.flex-center {
+  justify-content: center;
 }
 
 .flex-end {
@@ -153,7 +169,7 @@ li p {
 }
 
 form {
-  width: 40%;
+  margin: 0 auto;
 }
 
 input {
@@ -161,7 +177,7 @@ input {
   padding: 0.25rem;
   border-radius: 3px;
   transition: box-shadow 0.2s;
-}
+} 
 
 input:focus {
   border: 1px solid var(--secondary);
@@ -172,6 +188,10 @@ input:focus {
   .header-element {
     text-align: center;
     margin: auto;
+  }
+
+  .bio {
+    width: 100%;
   }
 
   ul {

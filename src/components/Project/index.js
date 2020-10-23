@@ -38,7 +38,7 @@ function Project() {
 
     return (
 
-        <div className="flex-row space-between">
+        <div className="flex-row space-around">
             {projects.map((project, i) => (
                 <Card style={{ width: '22rem' }}>
                     <Card.Body className="mx-1 my-1 text-center">
