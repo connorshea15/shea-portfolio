@@ -41,20 +41,20 @@ function Contact() {
             <div>
                 <h1 className="text-center">Contact me</h1>
                 <form id="contact-form" onSubmit={handleSubmit}>
+                    <label htmlFor="name">Name: </label>
                     <div>
-                        <label htmlFor="name">Name: </label>
                         <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                     </div>
+                    <label htmlFor="email">Email address: </label>
                     <div>
-                        <label htmlFor="email">Email address: </label>
                         <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                     </div>
+                    <label htmlFor="subject">Subject: </label>
                     <div>
-                        <label htmlFor="subject">Subject: </label>
                         <input type="text" name="subject" defaultValue={subject} onBlur={handleChange} />
                     </div>
+                    <label htmlFor="message">Message: </label>
                     <div>
-                        <label htmlFor="message">Message: </label>
                         <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
                     </div>
                     {errorMessage && (
