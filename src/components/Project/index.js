@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
+import { Popover } from 'antd';
 
 function Project() {
+
+    const [state, setState] = useState({ hover: false });
+
+    const showLinks = () => {
+        setState({ hover: true });
+    };
+
+    const hideLinks = () => {
+        setState({ hover: false });
+    };
 
     const projects = [
         {
@@ -38,23 +49,35 @@ function Project() {
 
     return (
 
-        <div className="flex-row space-around">
+        <div class="d-flex flex-row justify-content-around">
             {projects.map((project, i) => (
-                <Card style={{ width: '22rem' }}>
-                    <Card.Body className="mx-1 my-1 text-center">
-                        <Card.Title><a href={project.link}>{project.name}</a></Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted"><a href={project.gitLink}>GitHub</a></Card.Subtitle>
-                        <Card.Text>
-                            <img
-                                src={require(`../../assets/images/${i}.JPG`)}
-                                alt={project.name}
-                                className="project-photo"
-                                key={project.name}
-                            >
-                            </img>
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
+                    <div class="card m-2 p-2 project-card" key={project.name}>
+                        <div class="image-stack card-img-top">
+                        <img
+                            onMouseEnter={showLinks}
+                            onMouseLeave={hideLinks}
+                            src={require(`../../assets/images/${i}.JPG`)}
+                            alt={project.name}
+                            class="rounded border project-photo"
+                        >
+                        </img>
+                        {state.hover &&
+                                (
+                                    <div class="overlay text-center" onMouseEnter={showLinks}>
+                                        <div class="overlay-text">
+                                        <h5 className="card-title"><a href={project.link}>Live Application</a></h5>
+                                        <h6 className="card-text"><a href={project.gitLink}>
+                                            <img src={require("../../assets/GitHub-Mark/PNG/GitHub-Mark-64px.JPG")} alt="GitHub Icon" key="github" />
+                                        </a></h6>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                        </div>
+                        <div class="card-body text-center">
+                            <p>{project.name}</p>
+                        </div>
+                    </div>
             ))}
         </div>
 

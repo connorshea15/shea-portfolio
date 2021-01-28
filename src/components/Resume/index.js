@@ -8,7 +8,7 @@ function Resume() {
 
     return (
         <div className="text-center">
-            <h1 className="text-center">Download My <a href="../../assets/Shea_Connor_Resume.pdf" download>Resume</a></h1>
+            <h1 className="text-center">Download My <a href="" src="../../assets/Shea_Connor_Resume.pdf" download="Shea_Connor_Resume.pdf">Resume</a></h1>
             <div className="flex-row flex-center px-2">
                 <div className="mx-2">
                     <h4>Front-end Proficiencies</h4>
