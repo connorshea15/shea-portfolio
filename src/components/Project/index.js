@@ -47,6 +47,8 @@ function Project() {
         }
     ]
 
+    // It looks okay just not great!
+
     return (
 
         <div class="d-flex flex-row justify-content-around">
