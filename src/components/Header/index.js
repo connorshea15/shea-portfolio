@@ -13,7 +13,7 @@ function Header(props) {
 
     return (
         <header>
-            <div id="header" className="full-width flex-row px-2 space-between align-items-center">
+            <div id="header" className="full-width d-flex flex-row p-3 space-between">
                     <h2 className="header-element">
                         Connor Shea
                     </h2>

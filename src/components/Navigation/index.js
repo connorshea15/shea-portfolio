@@ -11,7 +11,7 @@ function Navigation(props) {
 
 
     return (
-        <ul className="d-flex flex-row header-element">
+        <ul className="d-flex flex-row header-element mt-2">
             <div className="flex-row header-element">
             <li className={`mx-2 ${currentSection === 'About' && 'navActive'}`}>
                 <p onClick={() => setCurrentSection('About')} key="About">
