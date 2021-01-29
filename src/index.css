@@ -55,10 +55,6 @@ li {
   display: inline;
 }
 
-.bio {
-  width: 40%;
-}
-
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -200,22 +196,21 @@ li p {
 
 .li-logo {
   width: 200px;
-  height: 60px;
-  text-align: center;
+  height: auto;
 }
 
 .full-width {
   width: 100%;
 }
 
+#contact-form {
+  width: 80%;
+}
+
 .text-center {
   text-align: center;
 }
-
-.form {
-  margin: 0 auto;
-}
-
+/*
 input {
   font-size: 1rem;
   padding: 0.25rem;
@@ -226,7 +221,7 @@ input {
 input:focus {
   border: 1px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
-}
+}*/
 
 @media (max-width: 708px) {
   .header-element {

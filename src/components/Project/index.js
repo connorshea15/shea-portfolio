@@ -53,10 +53,9 @@ function Project() {
         }
     ]
 
-    // It looks okay just not great!
-
     return (
-
+        <div>
+            <h1 className="text-center">Portfolio</h1>        
         <div class="d-flex flex-row justify-content-center">
             {projects.map((project, i) => (
                     <div class="card m-4 p-2 project-card" key={project.name}>
@@ -82,6 +81,7 @@ function Project() {
                         </div>
                     </div>
             ))}
+        </div>
         </div>
 
     );

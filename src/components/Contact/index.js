@@ -32,39 +32,50 @@ function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log("formState: " + formState.subject);
+
         window.open(`mailto:connorshea15@gmail.com?subject=${formState.subject}&body=${formState.message}`);
+
+        setFormState({
+            subject: '',
+            message: ''
+        });
     }
 
     return (
-        <section className="form">
-            <div>
+        <section>
                 <h1 className="text-center">Contact</h1>
-                <form id="contact-form" onSubmit={handleSubmit}>
-                    <label htmlFor="name">Name: </label>
-                    <div>
-                        <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-                    </div>
-                    <label htmlFor="email">Email address: </label>
-                    <div>
-                        <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-                    </div>
-                    <label htmlFor="subject">Subject: </label>
-                    <div>
-                        <input type="text" name="subject" defaultValue={subject} onBlur={handleChange} />
-                    </div>
-                    <label htmlFor="message">Message: </label>
-                    <div>
-                        <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-                    </div>
-                    {errorMessage && (
+                <form id="contact-form" className="img-responsive mx-auto p-4 border rounded" onSubmit={handleSubmit}>
+                    <div class="form-group">
+                        <label htmlFor="name">Name: </label>
                         <div>
-                            <p>{errorMessage}</p>
+                            <input class="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
                         </div>
-                    )}
-                    <button type="submit">Submit</button>
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="email">Email address: </label>
+                        <div>
+                            <input class="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="subject">Subject: </label>
+                        <div>
+                            <input class="form-control" type="text" name="subject" defaultValue={subject} onBlur={handleChange} />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label htmlFor="message">Message: </label>
+                        <div>
+                            <textarea class="form-control" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                        </div>
+                        {errorMessage && (
+                            <div>
+                                <p>{errorMessage}</p>
+                            </div>
+                        )}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-            </div>
         </section>
     );
 }
