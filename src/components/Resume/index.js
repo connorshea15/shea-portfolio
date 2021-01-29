@@ -1,14 +1,10 @@
 import React from 'react';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 
 function Resume() {
 
     return (
         <div className="text-center">
-            <h1 className="text-center">Download My <a href="" src="../../assets/Shea_Connor_Resume.pdf" download="Shea_Connor_Resume.pdf">Resume</a></h1>
+            <h1 className="text-center">Download My <a href="https://docs.google.com/document/d/1pkfHg0PUpo0HLfnpJjwBrvLLf8RLRVnBbrfHMrw41Dk/export?format=pdf" target="_blank">Resume</a></h1>
             <div className="flex-row flex-center px-2">
                 <div className="mx-2">
                     <h4>Front-end Proficiencies</h4>
