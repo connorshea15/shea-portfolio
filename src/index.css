@@ -170,10 +170,13 @@ li p {
   transition: .5s ease;
 }
 
-.overlay-text {
-  white-space: nowrap; 
+.live-app-text {
   text-decoration: none;
   color: white;
+}
+
+.overlay-text {
+  white-space: nowrap; 
   font-size: 20px;
   position: absolute;
   overflow: hidden;
@@ -191,7 +194,7 @@ li p {
 .footer {
   margin: 0 auto;
 	max-width: 90%;
-  padding: 50px 30px;
+  padding: 30px 30px;
   text-align: center;
 }
 
