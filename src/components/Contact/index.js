@@ -43,8 +43,8 @@ function Contact() {
 
     return (
         <section>
-                <h1 className="text-center">Contact</h1>
-                <form id="contact-form" className="img-responsive mx-auto p-4 border rounded" onSubmit={handleSubmit}>
+                <h3 className="text-center">Contact</h3>
+                <form id="contact-form" className="img-responsive mx-auto my-4 p-4 border rounded" onSubmit={handleSubmit}>
                     <div class="form-group">
                         <label htmlFor="name">Name: </label>
                         <div>

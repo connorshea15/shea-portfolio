@@ -19,7 +19,7 @@ function Project() {
             name: "Music Matchbox",
             link: "https://music-matchbox.herokuapp.com/",
             gitLink: "https://github.com/connorshea15/Music-Matchbox",
-            description: "This is a description!"
+            description: "Social networking site geared towards connecting musicians. Built on the MERN Stack incorporating GraphQL, JWT, and Bootstrap"
         },
         {
             name: "Here or There",
@@ -55,7 +55,7 @@ function Project() {
 
     return (
         <div>
-            <h1 className="text-center">Portfolio</h1>        
+            <h3 className="text-center">Portfolio</h3>        
         <div class="d-flex flex-row justify-content-center">
             {projects.map((project, i) => (
                     <div class="card m-4 p-2 project-card" key={project.name}>
@@ -77,7 +77,7 @@ function Project() {
                         </div>
                         <div class="card-body text-center">
                             <h5>{project.name}</h5>
-                            <p>{project.description}</p>
+                            <p class="text-wrap">{project.description}</p>
                         </div>
                     </div>
             ))}

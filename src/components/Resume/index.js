@@ -4,7 +4,7 @@ function Resume() {
 
     return (
         <div className="text-center">
-            <h1 className="text-center">Download My <a href="https://docs.google.com/document/d/1pkfHg0PUpo0HLfnpJjwBrvLLf8RLRVnBbrfHMrw41Dk/export?format=pdf" target="_blank">Resume</a></h1>
+            <h3 className="text-center">Download My <a href="https://docs.google.com/document/d/1pkfHg0PUpo0HLfnpJjwBrvLLf8RLRVnBbrfHMrw41Dk/export?format=pdf" target="_blank">Resume</a></h3>
             <div className="flex-row flex-center px-2">
                 <div className="mx-2">
                     <h4>Front-end Proficiencies</h4>

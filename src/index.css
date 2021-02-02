@@ -28,13 +28,22 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: var(--dark);
-  color: var(--light);
+  background-color: #66B9Bf;
   font-family: 'Poiret One', cursive;
 
 }
 
 header {
-  background-color: aqua;
+  background-color: #77C9D4;
+  box-shadow: 0px 10px 10px grey!important;
+}
+
+main {
+  background-color: #EAE3EA;
+}
+
+.form-control {
+  background-color: #EAE3EA!important;
 }
 
 code {
@@ -133,6 +142,16 @@ li p {
   opacity: 0.7;
 }
 
+.card {
+  background-color: #B56357!important;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.project-card {
+  width: 25rem;
+  height: auto;
+}
+
 .image-stack {
   position: relative;
 }
@@ -143,7 +162,7 @@ li p {
 }
 
 .project-photo {
-  width: 25rem;;
+  width: 25rem;
   height: auto;
 }
 
@@ -152,7 +171,7 @@ li p {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #77C9D4;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -182,9 +201,10 @@ li p {
 
 .footer {
   margin: 0 auto;
-	max-width: 90%;
+	max-width: 100%;
   padding: 30px 30px;
   text-align: center;
+  background-color: #77C9D4;
 }
 
 .li-logo {
@@ -198,6 +218,7 @@ li p {
 
 #contact-form {
   width: 80%;
+  background-color: #B56357!important ;
 }
 
 .text-center {
