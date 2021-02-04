@@ -162,7 +162,7 @@ li p {
 }
 
 .project-photo {
-  width: 25rem;
+  max-width: 30rem;
   height: auto;
 }
 
@@ -195,9 +195,14 @@ li p {
 }
 
 .profile-pic {
-  height: 300px;
-  width: auto;
+  min-width: 300px;
+  width: 100%;
+  height: auto;
 }
+
+/*.bio {
+  overflow-wrap: break-word;
+}*/
 
 .footer {
   margin: 0 auto;
@@ -229,6 +234,10 @@ li p {
   .header-element {
     text-align: center;
     margin: auto;
+  }
+
+  #about-section {
+    flex-wrap: wrap!important;
   }
 
   .bio {

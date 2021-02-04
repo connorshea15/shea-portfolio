@@ -25,31 +25,31 @@ function Project() {
             name: "Here or There",
             link: "https://here-or-there-project.herokuapp.com/",
             gitLink: "https://github.com/connorshea15/group-3-project",
-            description: "This is a description!"
+            description: "Blog site for travelers to share reviews of cities they have visited. Built using MVC architecture utilizing MySQL and Sequelize for database management"
         },
         {
             name: "Destination Designator",
             link: "https://connorshea15.github.io/Destination-Designator/",
             gitLink: "https://github.com/connorshea15/Destination-Designator",
-            description: "This is a description!"
+            description: "Simple National Park Finder utilizing the National Park Services third party API"
         },
         {
             name: "Portfolio",
             link: "https://connorshea15.github.io/Connor-Shea-Portfolio/",
             gitLink: "https://github.com/connorshea15/Connor-Shea-Portfolio",
-            description: "This is a description!"
+            description: "My first portfolio built from scratch utilizing HTML and CSS"
         },
         {
             name: "THE Tech Blog",
             link: "https://shea-tech-blog.herokuapp.com/",
             gitLink: "https://github.com/connorshea15/shea-tech-blog",
-            description: "This is a description!"
+            description: "A simple blog allowing for posts and comments on posts utilizing Express Handlebars as the template engine, express session for tracking logged in users, and bcrypt for hashing passwords"
         },
         {
             name: "Weather Dashboard",
             link: "https://connorshea15.github.io/Shea-Weather-Dashboard/",
             gitLink: "https://github.com/connorshea15/Shea-Weather-Dashboard",
-            description: "This is a description!"
+            description: "Weather Dashboard for searching weather information in specific cities using the third-party OpenWeather API, Bootstrap for styling, and local storage for search history"
         }
     ]
 

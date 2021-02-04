@@ -8,10 +8,13 @@ function About() {
     return (
        <div>
             <h3 className="text-center">About Me!</h3>
-            <div className="d-flex flex-row flex-wrap justify-content-center my-2">
-                <img src={require(`../../assets/profile-picture.JPG`)} className="profile-pic mx-2"></img>
-                <div className="mx-2">
-                    <p>
+            <div id="about-section" className="d-flex flex-row flex-nowrap justify-content-center my-2">
+                <div className="mx-3 py-4 text-center">
+                    <img src={require(`../../assets/profile-picture.JPG`)} className="profile-pic mx-2 img-fluid"></img>
+                </div>
+                <div className="mx-3 my-3 bio">
+                    <h5 className="text-center">Connor Shea: Full Stack Web Developer</h5>
+                    <p className="bio">
                         I graduated from the University of Arizona with a BS in Industrial Engineering, and recently 
                         completed a UofA Coder Boot Camp in Full Stack Web Development. The 24-week program not only 
                         provided a solid foundation in the MERN Stack, Heroku, Jest, and relational databases, it also 
