@@ -4,32 +4,43 @@ function Resume() {
 
     return (
         <div className="text-center resume-page">
-            <h3 className="text-center">Download My <a href="https://docs.google.com/document/d/1pkfHg0PUpo0HLfnpJjwBrvLLf8RLRVnBbrfHMrw41Dk/export?format=pdf" target="_blank" rel="noopener noreferrer">Resume</a></h3>
+            <h3 className="text-center mb-2">Download My <a href="https://docs.google.com/document/d/1pkfHg0PUpo0HLfnpJjwBrvLLf8RLRVnBbrfHMrw41Dk/export?format=pdf" target="_blank" rel="noopener noreferrer">Resume</a></h3>
+            <h4>Proficiencies</h4>
             <div className="flex-row flex-center px-2">
                 <div className="mx-2">
-                    <h4>Front-end Proficiencies</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>React</li>
-                        <li>Bootstrap</li>
-                    </ul>
+                    <div class="card m-4 my-2 p-2 project-card">
+                        <div class="card-body text-center">
+                            <h5>Frontend</h5>
+                            <div className='skill-list'>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>React</p>
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="mx-2">
-                    <h4>Back-end Proficiencies</h4>
-                    <ul>
-                        <li>Express.js</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>MySQL</li>
-                        <li>Sequelize</li>
-                        <li>Node.js</li>
-                        <li>API</li>
-                    </ul>
-                </div>
+                    <div class="card m-4 p-2 project-card">
+                        <div class="card-body">
+                            <h5>Backend</h5>
+                            <div className='skill-list'>
+                                <p>Express.js</p>
+                                <p>MongoDB</p>
+                                <p>Mongoose</p>
+                                <p>MySQL</p>
+                                <p>Sequelize</p>
+                                <p>Node.js</p>
+                                <p>API</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+
     );
 }
 

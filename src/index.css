@@ -37,7 +37,7 @@ body {
 header {
   background-color: #77C9D4;
   box-shadow: 0px 10px 10px grey!important;
-  min-height: 15vh;
+  /*min-height: 15vh;*/
 }
 
 .main-page {
@@ -209,6 +209,11 @@ li p {
 /*.bio {
   overflow-wrap: break-word;
 }*/
+
+.skill-list {
+  line-height: 1;
+  margin-top: 1rem;
+}
 
 .footer {
   margin: 0 auto;
