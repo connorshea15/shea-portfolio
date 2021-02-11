@@ -63,7 +63,7 @@ function Project() {
                         <img
                             src={require(`../../assets/images/${i}.JPG`)}
                             alt={project.name}
-                            class="rounded border project-photo img-fluid"
+                            class="rounded border img-fluid"
                         >
                         </img>
                                     <div class="overlay text-center">
